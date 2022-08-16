@@ -15,13 +15,11 @@
   <button id="epic">CRASH BUTTON (WARNING)</button>
   
   <script>
-    document.getElementById("epic").addEventListener("click", "epicer()")
-    
-    function epicer() {
+    document.getElementById("epic").addEventListener("click", () => {
       txt = "n89pc2q5np6c245vtoinvqiuncq4twgcmioyqt4oicioy";
       while(true) {
         txt = txt += "a";
         console.log(txt);
-     }}
+     }})
   </script>
 </body>
