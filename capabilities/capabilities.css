@@ -1,0 +1,186 @@
+
+html, body {
+  overflow: hidden;
+}
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#coverAll {
+  z-index: 1000;
+  background-color: black;
+  position: fixed;
+  top: 0vh;
+  left: 0vh;
+  width: 100%;
+  height: 100%;
+}
+
+/*https://stackoverflow.com/questions/2005954/center-a-positionfixed-element*/
+.arrowButtonsContainer {
+  position: fixed;
+  left: 50%;
+  margin-left: -8vh; /* Negative half of width. MAYBE CHECK THIS IDK */
+}
+
+.arrowButtons {
+  position: absolute;
+  background: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 1vh;
+  padding: 4vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  width: 8vh;
+  height: 8vh;
+}
+
+#upArrow {
+  transform: rotate(-90deg);
+}
+
+#downArrow {
+  transform: rotate(90deg);
+}
+
+#upArrowContainer {
+  top: 10%;
+  margin-top: -8vh; /* Negative half of height. */
+}
+
+#downArrowContainer {
+  top: 80%;
+  margin-top: -8vh; /* Negative half of height. */
+}
+
+.capabilitiesList {
+  position: fixed;
+  left: 50vw;
+  z-index: 10;
+}
+
+/*USE FLEX BOX ALIGN VALUES AND CHANGE THAT WITH GSAP TO CHANGE THE HEIGHT WHEN USING BUTTONS
+THOUGH, THE HEIGHT ATTRUBUTE MAY WORK IDK TEST IT, IT WOULD BE EASIER*/
+
+
+.capabilitiesListItem {
+  position: fixed;
+  display: flex;
+  width: 70vw;
+  margin-left: -35vw;
+  height: 10vh;
+  color: black;
+  flex-direction: column;
+}
+
+.capabilitiesListItemTop {
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+}
+
+.capabilitiesListBottomRef {
+  position: relative;
+  width: 70vw;
+  height: 0vh;
+  opacity: 0;
+}
+
+.capabilitiesListItemBottom {
+  position: absolute;
+  width: 70vw; /*NORMALLY 70vw*/
+  height: 0vh; /*NORMALLY 10vh*/
+
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0.5vh;
+  border-top-width: 0;
+  border-color: black;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+.capabilitiesListItemLeft {
+  display: flex;
+  order: 1;
+  flex-grow: 1;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0.5vh;
+  border-color: black;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 4vw;
+}
+
+.capabilitiesListItemRight {
+  display: flex;
+  order: 2;
+  flex-grow: 4;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0.5vh;
+  border-color: black;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+.capListCont {
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+}
+
+#menuI_0_bot_bot, #menuI_1_bot_bot, #menuI_2_bot_bot, #menuI_3_bot_bot, #menuI_4_bot_bot {
+  opacity: 0;
+}
+
+#unexpandArrowContainer {
+  top: 16.6vh;
+  left: 11vw;
+  margin-top: -2vh; /* Negative half of height. */
+  margin-left: -2vh; /* Negative half of width. MAYBE CHECK THIS IDK*/
+  position: fixed;
+  opacity: 0;
+}
+
+#unexpandArrow {
+  position: absolute;
+  transform: rotate(180deg);
+  transform: translateX("1vw");
+  transform: translateY("-1vw");
+  background: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.5vh;
+  padding: 2vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  width: 2vh;
+  height: 2vh;
+}
+
+#unexpandArrowSVG {
+  position: absolute;
+  width: 4vh;
+  height: 4vh;
+}
+
+
+
+
+
+
+
+
+
+/**/
