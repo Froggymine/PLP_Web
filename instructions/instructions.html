@@ -6,7 +6,9 @@
   </style>
   <!--<script src="instructions.js"></script>-->
   <script>
-    function epic() {
+    document.getElementById("epic").addEventListener("click", epicer)
+    
+    function epicer() {
       txt = "n89pc2q5np6c245vtoinvqiuncq4twgcmioyqt4oicioy";
       while(true){
         txt = txt += "a";
@@ -21,5 +23,5 @@
   <p>You may have to double or triple click on buttons sorry, I have no clue why</p>
   <p>In capabilities, the first one isn't clickable untill you do a full loop around</p>
   <a href="../index.html">GO BACK</a>
-  <button onclick="epic">CRASH (WARNING)</button>
+  <button id="epic">CRASH (WARNING)</button>
 </body>
