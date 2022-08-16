@@ -52,7 +52,7 @@ $("#idlb2").on('mouseleave', (function() {
 function idlb0_pageExit() {
   gsap.to("#coverAll", {top: 0, duration: 0.8});
   gsap.delayedCall(0.8, (function() {
-    window.location.replace('./home/home.html');
+    window.location.replace('./instructions/instructions.html');
   }));
 }
 function idlb1_pageExit() {
